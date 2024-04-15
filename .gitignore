@@ -1,0 +1,11 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+/notes
+django.dot
+code.txt
+*.pyc
+db.sqlite3
