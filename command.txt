@@ -1,0 +1,16 @@
+docker build -t django_docker:8000 .
+
+-p publish (8005) listen (EXPOSE PORT) 8000
+
+docker run -d -p 8005:8000 django_docker
+
+docker ps  
+
+docker kill (id)
+
+docker run -it django_docker 
+
+docker inspect (id)
+
+docker run -it django_docker /bin/bash
+
