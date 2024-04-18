@@ -18,7 +18,9 @@ RUN apt-get update && \
 
 # Set up working directory and copy requirements file
 WORKDIR /home/django_app
+
 COPY requirements.txt .
+
 COPY . .
 
 # Upgrade pip and install dependencies from requirements.txt
@@ -28,6 +30,6 @@ RUN pip install --upgrade pip && \
     # listen on port 8000
 EXPOSE 8000
 
-
+#running WSGI 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 

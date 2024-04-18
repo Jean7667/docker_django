@@ -1,0 +1,31 @@
+#------------
+#Django app
+
+version: "3."
+services:
+web:
+depends_on:
+build:
+context:
+dockerfile:
+image:
+environement:
+-PORT=8000
+#env file
+
+#publish
+ports:
+
+#migrate exec chmod
+
+#-----------------
+#postgres
+
+image:
+#env file
+expose:
+volumes:
+  postgres_data:
+  
+#---------------------
+#redis

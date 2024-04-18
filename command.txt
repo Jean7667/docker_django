@@ -14,3 +14,7 @@ docker inspect (id)
 
 docker run -it django_docker /bin/bash
 
+
+docker compose down  --build
+docker compose up --- build -d (detach)
+docker ps 
