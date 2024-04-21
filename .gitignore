@@ -10,4 +10,4 @@ code.txt
 *.pyc
 *.sqlite3
 commmand.txt
-postgres-secret.yaml
+k8s-config/postgres-secret.yaml 
