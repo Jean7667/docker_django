@@ -34,3 +34,14 @@ spec:
             secretKeyRef:
               name: postgresql-secrets
               key: POSTGRES_PASSWORD         
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-service
+spec:
+  selector: 
+    app: postgresql
+  ports:
+  - port: 5432
+    targetPort: 5432
