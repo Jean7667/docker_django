@@ -1,0 +1,9 @@
+version: '3'
+services:
+  docker-registry-ui:
+    image: joxit/docker-registry-ui:static
+    ports:
+      - "8080:80"
+    environment:
+      - REGISTRY_TITLE=Minikube Docker Registry
+      - REGISTRY_URL=http://localhost:5000
